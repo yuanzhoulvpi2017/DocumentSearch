@@ -15,7 +15,6 @@ import torch as t
 
 # 对文本进行拆分
 CHUNK_SIZE = 64
-global_dir = "政策归档文件"
 
 
 class FileType(Enum):
@@ -277,6 +276,8 @@ class KnowLedge:
 
 
 if __name__ == "__main__":
+    global_dir = "政策归档文件"
+
     kl = KnowLedge(global_dir=global_dir)
     res, data = kl.search_result("大学生创业有什么补贴")
     print(res)
