@@ -279,7 +279,7 @@ if __name__ == "__main__":
     global_dir = "政策归档文件"
 
     kl = KnowLedge(global_dir=global_dir)
-    res, data = kl.search_result("大学生创业有什么补贴")
+    res, data = kl.search_result(question_str="大学生创业有什么补贴")
     print(res)
     print(data)
 
