@@ -7,6 +7,8 @@
 
 
 ## 用法
+
+### 命令行形式
 1. `demo.py`文件里面
 
 ```python 
@@ -19,5 +21,13 @@ if __name__ == "__main__":
     print(res)
     print(data)
 ```
+### web端
+1. 注意修改`code-21`行的代码`global_dir = "政策归档文件"`
+```bash
+streamlit run web_ui.py --server.fileWatcherType none
+```
+![](images/0.png)
+![](images/1.png)
+
 
 
